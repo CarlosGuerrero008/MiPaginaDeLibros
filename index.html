@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empieza a Leer</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>📖 Empieza a Leer</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#libros">Libros</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="intro">
+            <h2>Explora el Mundo de la Lectura</h2>
+            <p>Descubre historias fascinantes y sumérgete en nuevas aventuras.</p>
+            <img src="./src/resources/libro.png" alt="Biblioteca iluminada" class="responsive-img">
+        </section>
+
+        <section class="multimedia">
+            <h2>Un Mensaje para Ti</h2>
+            <audio controls>
+                <source src="./src/resources/ssstik.io_1740018826358.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+            <video controls class="responsive-video">
+                <source src="./src/resources/La motivación para la lectura.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </section>
+
+        <section class="formulario">
+            <h2>Únete a Nuestra Comunidad</h2>
+            <form id="myForm">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Empieza a Leer. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./src/main.js" defer></script>
+</body>
+</html>
