@@ -47,9 +47,8 @@ body {
   margin-bottom: 30px;
 }
 
-img, video {
+img {
   width: 100%;
-  max-width: 600px;
   height: auto;
   border-radius: 8px;
 }
@@ -72,4 +71,46 @@ button:hover {
   color: white;
   padding: 15px;
   margin-top: 20px;
+}
+
+.cajones-imagenes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.cajon {
+  width: 22%; /* 4 imágenes por fila, ajustamos el tamaño */
+  text-align: center;
+  margin: 5px; /* Reducimos el espacio entre los contenedores */
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cajon img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.cajon figcaption {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 1024px) {
+  .cajon {
+    width: 45%; /* 2 imágenes por fila en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .cajon {
+    width: 100%; /* 1 imagen por fila en pantallas pequeñas */
+  }
 }
